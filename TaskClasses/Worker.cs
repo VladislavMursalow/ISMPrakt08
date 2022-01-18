@@ -39,9 +39,19 @@ namespace TaskClasses
             Lastname = a.Lastname;
             Surname = a.Surname;
             Data = a.Data;
-            WorkPlace = a.WorkPlace;
             Salary = a.Salary;
             Prize = a.Prize;
+        }
+
+        public string GetStringInformation()
+        {
+            return $"Firstname = {Firstname}\n" +
+                $"Lastname = {Lastname}\n" +
+                $"Surname = {Surname}\n" +
+                $"Data = {Data}\n" +
+                $"Salary = {Salary}" +
+                $"Prize = {Prize}" +
+                $"WorkPlace = {WorkPlace.GetStringInformation()}\n";
         }
     }
 }
