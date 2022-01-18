@@ -36,5 +36,14 @@ namespace TaskClasses
             Street = a.Street;
             HouseNumber = a.HouseNumber;
         }
+
+        public string GetStringInformation() 
+        {
+            return $"Index = {Index}\n" +
+                $"Country = {Country}\n" +
+                $"City = {City}\n" +
+                $"Street = {Street}\n" +
+                $"HouseNumber = {HouseNumber}\n";
+        }
     }
 }
