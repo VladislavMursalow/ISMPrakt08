@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace TaskClasses
 {
-    class WorkPlace
+    public class WorkPlace
     {
+        public int Id { get; set; }
+        public string CompanyName { get; set; }
+        public Adress Adress { get; set; }
+        public int WorkersCount { get; set; }
+
     }
 }
