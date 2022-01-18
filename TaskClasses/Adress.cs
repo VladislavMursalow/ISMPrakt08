@@ -13,5 +13,28 @@ namespace TaskClasses
         public string City { get; set; }
         public string Street { get; set; }
         public int HouseNumber { get; set; }
+
+        public Adress() 
+        { 
+            
+        }
+
+        public Adress(int index, string country, string city, string street, int houseNumber)
+        {
+            Index = index;
+            Country = country;
+            City = city;
+            Street = street;
+            HouseNumber = houseNumber;
+        }
+
+        public Adress(Adress a) 
+        {
+            Index = a.Index;
+            Country = a.Country;
+            City = a.City;
+            Street = a.Street;
+            HouseNumber = a.HouseNumber;
+        }
     }
 }
