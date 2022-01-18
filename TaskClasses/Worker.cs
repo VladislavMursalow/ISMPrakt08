@@ -49,8 +49,8 @@ namespace TaskClasses
                 $"Lastname = {Lastname}\n" +
                 $"Surname = {Surname}\n" +
                 $"Data = {Data}\n" +
-                $"Salary = {Salary}" +
-                $"Prize = {Prize}" +
+                $"Salary = {Salary}\n" +
+                $"Prize = {Prize}\n" +
                 $"WorkPlace = {WorkPlace.GetStringInformation()}\n";
         }
     }
