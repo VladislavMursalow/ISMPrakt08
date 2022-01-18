@@ -34,5 +34,12 @@ namespace TaskClasses
             WorkersCount = a.WorkersCount;
         }
 
+        public string GetStringInformation()
+        {
+            return $"Id = {Id}\n" +
+                $"CompanyName = {CompanyName}\n" +
+                $"WorkersCount = {WorkersCount}\n" +
+                $"Adress = {Adress.GetStringInformation()}";
+        }
     }
 }
